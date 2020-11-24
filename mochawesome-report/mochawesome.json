@@ -1,0 +1,161 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-11-24T14:40:14.754Z",
+    "end": "2020-11-24T14:40:30.984Z",
+    "duration": 16230,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "2bb51be3-eef2-4980-bf15-22c7a1611849",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [
+      {
+        "title": "\"before all\" hook: start server",
+        "fullTitle": "\"before all\" hook: start server",
+        "timedOut": false,
+        "duration": 2412,
+        "pass": false,
+        "fail": false,
+        "pending": false,
+        "context": "[\n  \"on_server_started\",\n  \"No file name provided to catch the screen!\"\n]",
+        "code": "return __awaiter(this, void 0, void 0, function* () {\n    nativescript_dev_appium_1.nsCapabilities.testReporter.context = this;\n    yield nativescript_dev_appium_1.startServer();\n});",
+        "err": {},
+        "isRoot": true,
+        "uuid": "1334ced5-36f9-4000-8294-592bd4c0846c",
+        "isHook": true,
+        "skipped": false
+      }
+    ],
+    "afterHooks": [
+      {
+        "title": "\"after all\" hook: stop server",
+        "fullTitle": "\"after all\" hook: stop server",
+        "timedOut": false,
+        "duration": 1186,
+        "pass": false,
+        "fail": false,
+        "pending": false,
+        "code": "return __awaiter(this, void 0, void 0, function* () {\n    yield nativescript_dev_appium_1.stopServer();\n});",
+        "err": {},
+        "isRoot": true,
+        "uuid": "8c96e7db-327d-47bd-937e-26b859f54102",
+        "isHook": true,
+        "skipped": false
+      }
+    ],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "b69f7a63-a3bb-4865-95bc-170c7ae3b1da",
+        "title": "sample scenario",
+        "fullFile": "C:\\Users\\quinn\\testNSApp\\V11Seed\\verifyid\\e2e\\sample.e2e-spec.js",
+        "file": "\\e2e\\sample.e2e-spec.js",
+        "beforeHooks": [
+          {
+            "title": "\"before all\" hook",
+            "fullTitle": "sample scenario \"before all\" hook",
+            "timedOut": false,
+            "duration": 12271,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "context": "[\n  \"appium_driver_started\",\n  \"No file name provided to catch the screen!\"\n]",
+            "code": "return __awaiter(this, void 0, void 0, function* () {\n    nativescript_dev_appium_1.nsCapabilities.testReporter.context = this;\n    driver = yield nativescript_dev_appium_1.createDriver();\n});",
+            "err": {},
+            "isRoot": false,
+            "uuid": "2fe98fd9-0fb2-4ad2-ae99-d2553543ea75",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "afterHooks": [
+          {
+            "title": "\"after all\" hook",
+            "fullTitle": "sample scenario \"after all\" hook",
+            "timedOut": false,
+            "duration": 356,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "context": "[\n  \"appium_driver_quit\",\n  \"No file name provided to catch the screen!\"\n]",
+            "code": "return __awaiter(this, void 0, void 0, function* () {\n    yield driver.quit();\n    console.log(\"Quit driver!\");\n});",
+            "err": {},
+            "isRoot": false,
+            "uuid": "9f2c3b2d-177a-4da3-bc8c-f6d734b4e2ff",
+            "isHook": true,
+            "skipped": false
+          },
+          {
+            "title": "\"after each\" hook",
+            "fullTitle": "sample scenario \"after each\" hook",
+            "timedOut": false,
+            "duration": 1,
+            "pass": false,
+            "fail": false,
+            "pending": false,
+            "code": "return __awaiter(this, void 0, void 0, function* () {\n    if (this.currentTest.state === \"failed\") {\n        yield driver.logTestArtifacts(this.currentTest.title);\n    }\n});",
+            "err": {},
+            "isRoot": false,
+            "uuid": "bc9b8630-0418-4998-92c0-20ecdf2cee1e",
+            "isHook": true,
+            "skipped": false
+          }
+        ],
+        "tests": [
+          {
+            "title": "should run a test",
+            "fullTitle": "sample scenario should run a test",
+            "timedOut": false,
+            "duration": 1,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "return __awaiter(this, void 0, void 0, function* () {\n    chai_1.assert.equal(true, true);\n});",
+            "err": {},
+            "isRoot": false,
+            "uuid": "e20cd8c5-2b73-4d39-a38a-2eec02789bd8",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "e20cd8c5-2b73-4d39-a38a-2eec02789bd8"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 1,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 999999
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 999999
+  },
+  "copyrightYear": 2020
+}
